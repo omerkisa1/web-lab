@@ -8,8 +8,8 @@ Vite + React + TypeScript kullanılarak oluşturulmuştur.
 ## Geliştirici
 
 - **Ad Soyad:** Ömer Kısa
-- **Öğrenci No:** [Öğrenci Numaranı Buraya Yaz]
-- **Bölüm:** Bilgisayar Mühendisliği
+- **Öğrenci No:** 235541111
+- **Bölüm:** Yazılım Mühendisliği
 
 ## Kullanılan Teknolojiler
 
