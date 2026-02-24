@@ -24,13 +24,13 @@ function App() {
           <h1 id="hakkimda-baslik">Hakkımda</h1>
           <div className="about-content">
             <figure>
-              <img
-                src="https://api.dicebear.com/7.x/avataaars/svg?seed=omer"
-                alt="Ömer Kısa profil avatarı"
-                className="profil-img"
-                width="160"
-                height="160"
-              />
+              <div className="profil-img" aria-label="Ömer Kısa profil avatarı" role="img">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="160" height="160">
+                  <circle cx="50" cy="50" r="50" fill="#dbeafe" />
+                  <circle cx="50" cy="38" r="18" fill="#2563eb" />
+                  <ellipse cx="50" cy="85" rx="28" ry="20" fill="#2563eb" />
+                </svg>
+              </div>
               <figcaption>Ömer Kısa</figcaption>
             </figure>
             <div>
