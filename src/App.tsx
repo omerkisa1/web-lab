@@ -6,22 +6,20 @@ function App() {
       <a href="#main-content" className="skip-link">Ana içeriğe atla</a>
 
       <header>
-        <div className="header-inner">
-          <span className="logo">Ömer Kısa</span>
-          <nav aria-label="Ana navigasyon">
-            <ul>
-              <li><a href="#hakkimda">Hakkımda</a></li>
-              <li><a href="#projeler">Projeler</a></li>
-              <li><a href="#iletisim">İletişim</a></li>
-            </ul>
-          </nav>
-        </div>
+        <span className="site-title">Ömer Kısa</span>
+        <nav aria-label="Ana navigasyon">
+          <ul>
+            <li><a href="#hakkimda">Hakkımda</a></li>
+            <li><a href="#projeler">Projeler</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+          </ul>
+        </nav>
       </header>
 
       <main id="main-content">
 
         <section id="hakkimda" aria-labelledby="hakkimda-baslik">
-          <h1 id="hakkimda-baslik">Hakkımda</h1>
+          <h2 id="hakkimda-baslik">Hakkımda</h2>
           <div className="about-content">
             <figure>
               <img
@@ -35,12 +33,14 @@ function App() {
             </figure>
             <div>
               <p>Merhaba! Ben Ömer Kısa, Yazılım Mühendisliği bölümü öğrencisiyim. Web geliştirme, kullanıcı arayüzü tasarımı ve modern araçlar üzerine çalışıyorum.</p>
-              <h2>Kullandığım Teknolojiler</h2>
-              <ul className="tech-list">
-                <li>HTML5 &amp; CSS3</li>
-                <li>JavaScript &amp; TypeScript</li>
+              <h3>Kullandığım Teknolojiler</h3>
+              <ul className="skill-tags" role="list" aria-label="Beceri etiketleri">
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>TypeScript</li>
                 <li>React</li>
-                <li>Git &amp; GitHub</li>
+                <li>Git</li>
                 <li>Vite</li>
               </ul>
             </div>
@@ -49,25 +49,42 @@ function App() {
 
         <section id="projeler" aria-labelledby="projeler-baslik">
           <h2 id="projeler-baslik">Projelerim</h2>
-          <div className="projects-grid">
+          <div className="project-grid">
             <article className="project-card">
-              <h3>Web LAB-1 — Ortam Kurulumu</h3>
-              <p>Vite + React + TypeScript ile oluşturulan ilk geliştirme ortamı projesi. Node.js, npm, Git ve VS Code kurulumunu kapsar.</p>
-              <ul className="project-tags">
+              <img
+                src="/proje1.jpg"
+                alt="E-Ticaret sitesi anasayfa ekran görüntüsü"
+              />
+              <h3>E-Ticaret Sitesi</h3>
+              <p>React ve Node.js ile geliştirilmiş tam kapsamlı bir e-ticaret uygulaması.</p>
+              <ul className="skill-tags">
                 <li>React</li>
-                <li>TypeScript</li>
-                <li>Vite</li>
-                <li>Git</li>
+                <li>Node.js</li>
+                <li>MongoDB</li>
               </ul>
             </article>
             <article className="project-card">
-              <h3>Web LAB-2 — Semantik Portföy</h3>
-              <p>Semantik HTML5, erişilebilirlik (a11y) ilkeleri ve form doğrulama konularını kapsayan kişisel portföy sayfası.</p>
-              <ul className="project-tags">
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>a11y</li>
-                <li>ARIA</li>
+              <img
+                src="/proje2.jpg"
+                alt="Blog uygulaması yazı listesi görünümü"
+              />
+              <h3>Blog Uygulaması</h3>
+              <p>Kişisel blog platformu. Markdown destekli yazı editörü.</p>
+              <ul className="skill-tags">
+                <li>TypeScript</li>
+                <li>Next.js</li>
+              </ul>
+            </article>
+            <article className="project-card">
+              <img
+                src="/proje3.jpg"
+                alt="Hava durumu uygulaması arayüzü"
+              />
+              <h3>Hava Durumu</h3>
+              <p>OpenWeather API ile anlık hava durumu bilgisi.</p>
+              <ul className="skill-tags">
+                <li>JavaScript</li>
+                <li>API</li>
               </ul>
             </article>
           </div>
